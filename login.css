@@ -1,0 +1,33 @@
+body {
+    background-color: #e1f8bf;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#first {
+    width: 500px;
+    height: 500px;
+    background: rgb(204, 98, 98);
+    overflow: hidden;
+}
+
+#first #second {
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    height: 450px;
+    width: 450px;
+    background: rgb(243, 186, 226);
+}
+
+.box {
+    padding-top: 5cm;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.btn {
+    background-color: #00bfff;
+    border-radius: 2cm;
+}

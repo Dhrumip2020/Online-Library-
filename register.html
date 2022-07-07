@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indus University Library Management System</title>
+    <link rel="stylesheet" href="register.css">
+    <script type="text/javascript">
+        function validation() {
+            var username = document.getElementById("username");
+            var password = document.getElementById("password");
+            var Cpassword = document.getElementById("Cpassword");
+            var phone = document.getElementById("phone");
+            if (username.value.trim() == "") {
+                alert("please enter the username");
+                username.style.border = "solid 3px red";
+                document.getElementById("label").style.visibility = "visible";
+                return false;
+            } else if (password.value.trim() == "") {
+                alert("please enter the password");
+                return false;
+            } else if (password.value.trim() == "") {
+                alert("please enter phone number");
+                return false;
+            } else if (Cpassword.value.trim() == "") {
+                alert("please enter the Confirm password");
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <br>
+    <div class="box">
+        <center>
+            <form action="registration.php" method="post" onsubmit="return validation()">
+                <strong> Registration form</strong><br><br>
+                <div id="first">
+                    <div id="second">
+                        <bold> SIGN UP</bold><br><br><br><br>
+                        <div class="take">
+                            <input type="text" name="username" id="username" placeholder="Username">
+                            <br><br>
+                            <label id="label" style="color: red; visibility: hidden;">
+                                Invalid
+                            </label><br>
+                            <input type="text" name="phone" id="phone" placeholder="phone number">
+                            <br><br>
+                            <input type="password" name="password" id="password" placeholder="password">
+                            <br><br>
+                            <input type="password" name="cpassword" id=" Cpassword" placeholder="confirm password"><br><br><br>
+
+                            <button class="btn">
+                            submit
+                        </button>
+                            <br><br> Already have an account?
+                            <a href="login.html">login</a>
+            </form>
+
+
+            </div>
+
+            </div>
+            </div>
+        </center>
+    </div>
+
+
+</body>
+
+</html>

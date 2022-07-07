@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indus University Library Management System</title>
+    <link rel="stylesheet" href="register.css">
+    <script type="text/javascript">
+        function validation() {
+            var username = document.getElementById("username");
+
+            var password = document.getElementById("password");
+            if (username.value.trim() == "") {
+                alert("please enter the username");
+                username.style.border = "solid 3px red";
+                document.getElementById("label").style.visibility = "visible";
+                return false;
+            } else if (password.value.trim() == "") {
+                alert("please enter password");
+                return false;
+            } else {
+                true;
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <br>
+    <div class="box">
+        <center>
+            <form action="login.php" method="post" onsubmit="return validation()">
+                <strong> Registration form</strong><br><br>
+                <div id="first">
+                    <div id="second">
+                        <bold> SIGN IN</bold><br><br><br><br>
+                        <div class="take">
+
+                            <input type="text" name="username" id="username" placeholder="Username">
+                            <br><br>
+                            <label id="label" style="color: red; visibility: hidden;">
+                                Invalid
+                            </label><br>
+
+
+
+                            <input type="password" name="password" id="password" placeholder="password">
+                            <br><br>
+
+                            <br><br><br>
+
+                            <button class="btn">
+                            submit
+                        </button>
+                            <br><br> Don't have an account?
+                            <a href="register.html">sign up</a>
+            </form>
+
+            </div>
+
+            </div>
+            </div>
+        </center>
+    </div>
+
+</body>
+
+</html>

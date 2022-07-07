@@ -1,0 +1,85 @@
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        position: sticky;
+        top: 0;
+        cursor: pointer;
+    }
+    
+    .navlist {
+        width: 50%;
+        /* background-color:black ;*/
+        align-items: center;
+        display: flex;
+    }
+    
+    .navlist li {
+        list-style: none;
+        padding: 26px 30px;
+    }
+    
+    .navlist li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navlist li a:hover {
+        text-decoration: none;
+        color: gray;
+    }
+    
+    .rightNav {
+        /* background-color:black ;*/
+        width: 30%;
+        text-align: right;
+    }
+    
+    .background {
+        background: rgba(0, 0, 0, 0.7);
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    
+    #search {
+        width: 100%;
+        font-size: 45px;
+        border: 2px solid grey;
+        border-radius: 15px;
+    }
+    
+    .search {
+        width: 40cm;
+        height: 7cm;
+        background-image: url(https://image.shutterstock.com/image-photo/book-260nw-633751133.jpg)
+    }
+    
+    .search input {
+        position: absolute;
+        top: 120px;
+        left: 620px;
+        height: 40px;
+        width: 300px;
+    }
+    
+    .search .btn {
+        position: absolute;
+        top: 120px;
+        left: 550px;
+        height: 40px;
+        width: 60px;
+    }
+    
+    .container {
+        font-size: larger;
+    }
+    
+    .cardsection {
+        display: flex;
+        padding: 2cm;
+    }
